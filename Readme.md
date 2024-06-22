@@ -22,4 +22,7 @@ struct Customer {
 ```
 
 and then use this crate as where `CreateCustomer` is the name of the new struct without the `id` field
-[substruct(Customer, CreateCustomer ["id"])]
+
+```json
+    [substruct(Customer, CreateCustomer ["id"])]
+```
