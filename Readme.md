@@ -12,7 +12,9 @@ while the response has
 ```
 { "id" : "83937220", "name" : "John Smith", "address" : "New York", "currency" : "usd"}
 ```
+
 In such a case, one would define the struct with all the fields. 
+
 ```rust
 struct Customer {
     id : String,
@@ -21,8 +23,8 @@ struct Customer {
     currency : String}
 ```
 
-and then use this crate as where `CreateCustomer` is the name of the new struct without the `id` field
+and then use this library to create a new struct `CreateCustomer` as a subset of `Customer` without the `id` field
 
-```json
+```
     [substruct(Customer, CreateCustomer ["id"])]
 ```
